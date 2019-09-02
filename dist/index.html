@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<title>image control test</title>
+	<style type="text/css">
+		html, body {
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div style="background-color: #fff;margin: 100px auto">
+		<img src="./image/0x0ss.jpg" style="width: 300px;height: 300px;" id="showImage">
+	</div>
+	<div id="box"></div>
+<script type="text/javascript" src="image-control.bundle.js"></script></body>
+<script>
+	let imageControl = new ImageControl('IC-rotateImg', 'IC-imageBox');
+	imageControl.drawBox('box', './image/0x0ss.jpg');
+	imageControl.action('showImage')
+	console.log(imageControl)
+</script>
+</html>
